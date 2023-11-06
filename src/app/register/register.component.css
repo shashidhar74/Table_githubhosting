@@ -1,0 +1,69 @@
+/* Style for the registration form container */
+form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the <p> element */
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+  }
+  
+  /* Style for the label */
+  label {
+    display: block; /* Display the label on a new line */
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Style for the input field */
+  input.form-control  {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+
+.inp1{
+    display: flex;
+    justify-content: space-around;
+}  
+.form-group select.form-control:hover,
+.form-group select.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+button {
+    background-color: #007bff;
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+  
+  }
+  button:hover {
+    background-color: #0056b3; 
+  }
+.close{
+    margin-left: 980px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.clsbtn{
+    margin-left: 900px;
+    margin-bottom: 30px;
+}

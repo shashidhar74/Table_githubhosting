@@ -1,0 +1,94 @@
+
+    <p class="">Please register here</p>
+    <button mat-icon-button style="float: right; margin-top: -20px;width: 30px; height: 30px;"matDialogClose>
+      <mat-icon style="font-size: 16px; margin:-5px -8px;">close</mat-icon>
+    </button>
+<form  [formGroup]="addemployee" (ngSubmit)="saveemployee(addemployee.value)" >
+
+  <div class="inp1">
+    <div class="form-group" class="text-red-100">
+      <label for="name">Employee Name</label>
+      <input type="text" id="name" placeholder="Enter your name" formControlName="name" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="mail">Employee E-mail</label>
+      <input type="text" id="mail" placeholder="Enter your email" formControlName="mail" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="number">Employee phone Number</label>
+      <input type="text" id="number" placeholder="Enter your phone number" formControlName="number" class="form-control">
+    </div>
+  </div>
+  <p>Employee Contact details</p>
+<hr>
+  <div class="inp1">
+    <div class="form-group">
+      <label for="name2">Employee Address-1</label>
+      <input type="text" id="name2" placeholder="Enter your name" formControlName="add1" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="mail2">Employee Address-2</label>
+      <input type="text" id="mail2" placeholder="Enter your email" formControlName="add2" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="number2">Employee City</label>
+      <input type="text" id="number2" placeholder="Enter your phone number" formControlName="city" class="form-control">
+    </div>
+  </div>
+  <div class="inp1">
+    <div class="form-group">
+      <label for="name2">Employee pin/zip code</label>
+      <input type="text" id="name2" placeholder="Enter your name" formControlName="pin" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="mail2">Employee State</label>
+      <input type="text" id="mail2" placeholder="Enter your email" formControlName="state" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="number2">Employee Country</label>
+      <input type="text" id="number2" placeholder="Enter your phone number" formControlName="country" class="form-control">
+    </div>
+  </div>
+  <p>Employee Educational details</p>
+<hr>
+<div class="inp1">
+    <div class="form-group">
+      <label for="name2">Degree</label>
+      <input type="text" id="name2" placeholder="Enter your name" formControlName="degree" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="mail2">percentage/CGPA</label>
+      <input type="text" id="mail2" placeholder="Enter your email" formControlName="cgpa" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="number2">Collage Name</label>
+      <input type="text" id="number2" placeholder="Enter your phone number" formControlName="clg_name" class="form-control">
+    </div>
+  </div>
+  <div class="inp1">
+    <div class="form-group">
+      <label for="name2">PUC percentage</label>
+      <input type="text" id="name2" placeholder="Enter your name" formControlName="puc_per" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="number2">SSLC percentage</label>
+        <input type="text" id="number2" placeholder="Enter your phone number" formControlName="sslc_per" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="number2">Location</label>
+        <input type="text" id="number2" placeholder="Enter your phone number" formControlName="location" class="form-control">
+      </div>
+  </div>
+  <div>
+    <button mat-raised-button color="primary" >submit</button>
+    <button mat-raised-button color="warn" matDialogClose style="margin-left: 20px;">Cancel</button>
+  </div>
+</form>

@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="nav.toggle()"> <mat-icon>menu</mat-icon></button>
+   <div class="text-lg">Main menu</div>
+   
+<div class="dialog1">
+  <button mat-raised-button color="" class="bg-customColor" (click)=" openRegister() ">Register</button>
+</div>
+ </mat-toolbar>
+ <mat-sidenav-container class="sidenav-wrapper" >
+      <mat-sidenav #nav>
+       <a [routerLink]="['home']" color="primary" (click)="closeSidenav(nav)">
+       <button mat-button>
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+        </button>
+      </a>
+      <a [routerLink]="['register']" color="primary" (click)="closeSidenav(nav)">
+        <button mat-button>
+          <mat-icon>receipt</mat-icon>
+          <span>Register</span>
+        </button>
+    </a>
+    <a [routerLink]="['empdata']" color="primary" (click)="closeSidenav(nav)">
+      <button mat-button>
+        <mat-icon>description</mat-icon>
+        <span>Employee Data</span>
+      </button>
+  </a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+
+
+
+

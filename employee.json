@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@example.com"
+    },
+    [
+      {
+        "name": "SHASHIDHARA",
+        "mail": "shashiblr74@gmail.com",
+        "number": "",
+        "add1": "",
+        "add2": "",
+        "city": "",
+        "pin": "",
+        "state": "",
+        "country": "",
+        "degree": "",
+        "cgpa": "",
+        "clg_name": "",
+        "sslc_per": "",
+        "puc_per": "",
+        "location": ""
+      }
+    ]
+  ]
+}
